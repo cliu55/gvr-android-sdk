@@ -1,31 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-  <string name="title">Gorillas</string>
-  <string name="subtitle">The great apes from Central Africa</string>
-  <string name="paragraph1">Gorillas are ground-dwelling, predominantly
-    herbivorous apes that inhabit the forests of central Africa.
-
-\n\nThe 360 video below shows gorillas in the Congo rainforest.
+  <string name="title">Forest</string>
+  <string name="subtitle">The Stanley Park Forest in Vancouver BC</string>
+  <string name="paragraph1">A forest walk through stanley park. Great for PTSD -
+      avoid all the city life clunks.
   </string>
 
-  <string name="paragraph2">The eponymous genus Gorilla is divided into two
-    species: the eastern gorillas and the western gorillas, and either four or
-    five subspecies. They are the largest living primates by physical size.
-
-\n\nThe DNA of gorillas is highly similar to that of humans, from 95–99%
-    depending on what is counted, and they are the next closest living relatives
-    to humans after the chimpanzees and bonobos.
-
-\n\nGorillas\' natural habitats cover tropical or subtropical forests in Africa.
-    Although their range covers a small percentage of Africa, gorillas cover a
-    wide range of elevations. The mountain gorilla inhabits the Albertine Rift
-    montane cloud forests of the Virunga Volcanoes, ranging in altitude
-    from 2,200–4,300 metres (7,200–14,100 ft). Lowland gorillas live in dense
-    forests and lowland swamps and marshes as low as sea level, with western
-    lowland gorillas living in Central West African countries and eastern lowland
-    gorillas living in the Democratic Republic of the Congo near its border with Rwanda
+  <string name="paragraph2">As the green grass, tinted with the twilight shades of purples
+      and yellows, swayed gently to the breeze the translucent clouds moved past the setting
+      sun. Over the bumps of hills, it was just visible. The sun colouring the sky shades of
+      yellow, orange purple looked peaceful against the original shades of light blue
   </string>
 
-  <string name="source">Source &lt;a href="https://en.wikipedia.org/wiki/Gorilla">Wikipedia&lt;/a></string>
+  <string name="source">Source &lt;a href="https://en.wikipedia.org/wiki/Stanley_Park">Wikipedia&lt;/a></string>
 </resources>

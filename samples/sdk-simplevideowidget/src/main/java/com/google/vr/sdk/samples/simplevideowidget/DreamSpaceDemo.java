@@ -42,30 +42,30 @@ import java.io.IOException;
  *
  * <p>Video from asset folder
  *   adb shell am start -a android.intent.action.VIEW \
- *     -n com.google.vr.sdk.samples.simplevideowidget/.SimpleVrVideoActivity \
+ *     -n com.google.vr.sdk.samples.simplevideowidget/.DreamSpaceDemo \
  *     -d "file:///android_asset/congo.mp4"
  *
  * <p>Video located on the phone's SD card.
  *   adb shell am start -a android.intent.action.VIEW \
- *     -n com.google.vr.sdk.samples.simplevideowidget/.SimpleVrVideoActivity \
+ *     -n com.google.vr.sdk.samples.simplevideowidget/.DreamSpaceDemo \
  *     -d /sdcard/FILENAME.MP4
  *
  * <p>Video hosted on a website:
  *   adb shell am start -a android.intent.action.VIEW \
- *     -n com.google.vr.sdk.samples.simplevideowidget/.SimpleVrVideoActivity \
+ *     -n com.google.vr.sdk.samples.simplevideowidget/.DreamSpaceDemo \
  *     -d "https://EXAMPLE.COM/FILENAME.MP4"
  *
  * <p>To load HLS files add "--ei inputFormat 2" to pass in an integer extra which will set
  * VrVideoView.Options.inputFormat to FORMAT_HLS. e.g.
  *   adb shell am start -a android.intent.action.VIEW \
- *     -n com.google.vr.sdk.samples.simplevideowidget/.SimpleVrVideoActivity \
+ *     -n com.google.vr.sdk.samples.simplevideowidget/.DreamSpaceDemo \
  *     -d "file:///android_asset/hls/iceland.m3u8" \
  *     --ei inputFormat 2 --ei inputType 2
  *
  * <p>To load MPEG-DASH files add "--ei inputFormat 3" to pass in an integer extra which will set
  * VrVideoView.Options.inputFormat to FORMAT_DASH. e.g.
  *   adb shell am start -a android.intent.action.VIEW \
- *     -n com.google.vr.sdk.samples.simplevideowidget/.SimpleVrVideoActivity \
+ *     -n com.google.vr.sdk.samples.simplevideowidget/.DreamSpaceDemo \
  *     -d "file:///android_asset/dash/congo_dash.mpd" \
  *     --ei inputFormat 3 --ei inputType 2
  *
@@ -73,12 +73,12 @@ import java.io.IOException;
  * add "--ei inputType 2" to pass in an integer extra which will set VrVideoView.Options.inputType
  * to TYPE_STEREO_OVER_UNDER. This can be combined with other extras, e.g:
  *   adb shell am start -a android.intent.action.VIEW \
- *     -n com.google.vr.sdk.samples.simplevideowidget/.SimpleVrVideoActivity \
+ *     -n com.google.vr.sdk.samples.simplevideowidget/.DreamSpaceDemo \
  *     -d "https://EXAMPLE.COM/FILENAME.MP4" \
  *     --ei inputType 2
  */
-public class SimpleVrVideoActivity extends Activity {
-  private static final String TAG = SimpleVrVideoActivity.class.getSimpleName();
+public class DreamSpaceDemo extends Activity {
+  private static final String TAG = DreamSpaceDemo.class.getSimpleName();
 
   /**
    * Preserve the video's state when rotating the phone.
@@ -335,7 +335,7 @@ public class SimpleVrVideoActivity extends Activity {
       // An error here is normally due to being unable to decode the video format.
       loadVideoStatus = LOAD_VIDEO_STATUS_ERROR;
       Toast.makeText(
-          SimpleVrVideoActivity.this, "Error loading video: " + errorMessage, Toast.LENGTH_LONG)
+          DreamSpaceDemo.this, "Error loading video: " + errorMessage, Toast.LENGTH_LONG)
           .show();
       Log.e(TAG, "Error loading video: " + errorMessage);
     }
@@ -388,7 +388,7 @@ public class SimpleVrVideoActivity extends Activity {
           @Override
           public void run() {
             Toast
-                .makeText(SimpleVrVideoActivity.this, "Error opening file. ", Toast.LENGTH_LONG)
+                .makeText(DreamSpaceDemo.this, "Error opening file. ", Toast.LENGTH_LONG)
                 .show();
           }
         });

@@ -8,11 +8,11 @@
     <uses-feature android:glEsVersion="0x00020000" android:required="true" />
 
     <!-- The app has largeHeap enabled which is required for loading large files. -->
-    <application android:label="SimpleVrVideoActivity"
+    <application android:label="Dream Space"
       android:largeHeap="true"
       android:theme="@android:style/Theme.Holo.Light">
         <!-- This demo is singleTask since it makes launching via custom adb intents easier. -->
-        <activity android:name=".SimpleVrVideoActivity"
+        <activity android:name=".DreamSpaceDemo"
           android:launchMode="singleTask">
             <intent-filter>
                 <!-- Primary intent when launching from the home screen -->
